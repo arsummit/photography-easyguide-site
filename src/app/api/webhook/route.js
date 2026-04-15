@@ -5,8 +5,8 @@ import { resend } from "@/lib/resend";
 // All customers receive these two folders regardless of what they purchased
 const DOWNLOAD_LINKS = [
   {
-    name: "Photography Guide Notes (All Files + Upgrades)",
-    url: "https://drive.google.com/drive/u/0/folders/REPLACE_WITH_PHOTOGRAPHY_FOLDER_ID",
+    name: "Photography Notes + All Extras",
+    url: "https://drive.google.com/drive/u/0/folders/1E6OB0aoj6xlSCDthFCdBf4okKRGAqU0h",
   },
 ];
 
@@ -76,7 +76,7 @@ async function fulfillOrder({ email, amountTotal }) {
       <tr>
         <td style="padding:12px 0;border-bottom:1px solid #f0e6da">
           <strong style="display:block;color:#111;font-size:15px">${item.name}</strong>
-          <a href="${item.url}" style="color:#eda3ac;font-size:14px;text-decoration:none">⬇ Open Folder</a>
+          <a href="${item.url}" style="color:#111;font-size:14px;text-decoration:none">⬇ Open Folder</a>
         </td>
       </tr>`
     )
@@ -84,7 +84,7 @@ async function fulfillOrder({ email, amountTotal }) {
 
   const emailHtml = `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#fff;color:#111">
-      <div style="background:#eda3ac;padding:32px;text-align:center">
+      <div style="background:#111;padding:32px;text-align:center">
         <h1 style="color:#fff;margin:0;font-size:24px">Thank you for your order! 🎉</h1>
       </div>
       <div style="padding:32px">
@@ -101,7 +101,7 @@ async function fulfillOrder({ email, amountTotal }) {
         <div style="margin-top:32px;padding:16px;background:#fff8f3;border-radius:8px;border:1px solid #f0e6da">
           <p style="margin:0;font-size:13px;color:#888">
             If you have any issues, reply to this email or contact
-            <a href="mailto:photography@easyguide.store" style="color:#eda3ac">photography@easyguide.store</a>
+            <a href="mailto:photography@easyguide.store" style="color:#111">photography@easyguide.store</a>
           </p>
         </div>
       </div>

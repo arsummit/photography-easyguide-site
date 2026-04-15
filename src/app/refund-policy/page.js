@@ -36,7 +36,7 @@ export default function RefundPolicy() {
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">How to Request a Refund</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             Email us at{" "}
-            <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>{" "}
+            <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>{" "}
             within <strong>7 days</strong> of your purchase. Please include your order email and a
             brief description of the issue. We will respond within 2 business days.
           </p>

@@ -49,13 +49,13 @@ export default function PrivacyPolicy() {
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">Your Rights</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             You have the right to access, correct, or delete your personal information. Email us at{" "}
-            <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>.
+            <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>.
           </p>
 
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">Contact</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             Questions about this policy? Contact us at{" "}
-            <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>.
+            <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>.
           </p>
         </div>
       </main>

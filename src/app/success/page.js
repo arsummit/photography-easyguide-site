@@ -111,7 +111,7 @@ function SuccessContent() {
                 { step: "3", title: "Start shooting!", desc: "Use your guides as a reference anytime — beginner techniques, exercises, references, and more are all inside." },
               ].map(({ step, title, desc }) => (
                 <div key={step} className="flex gap-4">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#eda3ac] text-[13px] font-bold text-white">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#111] text-[13px] font-bold text-white">
                     {step}
                   </div>
                   <div>
@@ -127,14 +127,14 @@ function SuccessContent() {
           <div className="rounded-[16px] bg-white px-8 py-6 shadow-sm text-center">
             <p className="text-[14px] text-[#888]">
               Need help? We&apos;re here for you.{" "}
-              <a href="mailto:photography@easyguide.store" className="font-medium text-[#eda3ac] underline">
+              <a href="mailto:photography@easyguide.store" className="font-medium text-[#111] underline">
                 photography@easyguide.store
               </a>
             </p>
           </div>
 
           <div className="pb-6 text-center">
-            <a href="/" className="inline-block rounded-[10px] bg-[#eda3ac] px-10 py-3 text-[15px] font-bold text-white transition hover:opacity-95">
+            <a href="/" className="inline-block rounded-[10px] bg-[#111] px-10 py-3 text-[15px] font-bold text-white transition hover:opacity-95">
               Back to Home
             </a>
           </div>

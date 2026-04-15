@@ -73,7 +73,7 @@ export default function DigitalDeliveryPolicy() {
             <li>Check all folders including spam, junk, and promotions.</li>
             <li>
               Contact us at{" "}
-              <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>{" "}
+              <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>{" "}
               with your order email and we will resend your links promptly.
             </li>
           </ul>
@@ -81,7 +81,7 @@ export default function DigitalDeliveryPolicy() {
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">Contact Us</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             For any questions regarding your order or delivery, reach out at{" "}
-            <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>.
+            <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>.
             We respond within 1–2 business days.
           </p>
         </div>

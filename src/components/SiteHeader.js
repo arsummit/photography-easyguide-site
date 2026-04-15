@@ -66,7 +66,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-[14px] md:gap-[24px] text-[13px] md:text-[14px] font-medium text-[#2b2b2b]">
             <a
               href="/#shop"
-              className="rounded-[6px] bg-[#eda3ac] px-[12px] md:px-[16px] py-[6px] md:py-[7px] text-[12px] md:text-[13px] font-semibold tracking-[0.1px] text-white transition-all duration-200 hover:bg-[#e07a87]"
+              className="rounded-[6px] bg-[#111] px-[12px] md:px-[16px] py-[6px] md:py-[7px] text-[12px] md:text-[13px] font-semibold tracking-[0.1px] text-white transition-all duration-200 hover:bg-[#333]"
             >
               Shop Now
             </a>

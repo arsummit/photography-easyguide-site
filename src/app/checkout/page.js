@@ -336,7 +336,7 @@ function PaymentForm({ email, onEmailChange, subtotal, processingFee, onProcessi
 
   const upsells = [
     {
-      title: "Drawing Easy Guide Premium (Instant Processing + Priority Support + 5 Free Gifts)",
+      title: "Photography Easy Guide Premium (Instant Processing + Priority Support + 5 Free Gifts)",
       oldPrice: "$99.99 USD",
       price: "$4.99",
       savings: "$95.00 Savings",
@@ -513,7 +513,7 @@ function PaymentForm({ email, onEmailChange, subtotal, processingFee, onProcessi
       <label className="mt-5 flex items-start gap-3">
         <input type="checkbox" className="mt-[3px] h-[20px] w-[20px] rounded border-[#cccccc]" />
         <span className="text-[15px] leading-[1.5] text-[#222222]">
-          I opt in to receive email marketing from Drawing Easy Guide about promotions and new offers.
+          I opt in to receive email marketing from Photography Easy Guide about promotions and new offers.
         </span>
       </label>
 
@@ -630,7 +630,7 @@ function PaymentForm({ email, onEmailChange, subtotal, processingFee, onProcessi
       <div className="mt-4">
         {processingFee > 0 ? (
           <div className="flex items-center justify-between rounded-[10px] bg-[#fff8f3] border border-[#f0e6da] px-5 py-4">
-            <span className="text-[15px] text-[#444]">Free Drawing Easy Guide + Guides — Processing Fee</span>
+            <span className="text-[15px] text-[#444]">Free Photography Easy Guide + Guides — Processing Fee</span>
             <span className="text-[15px] font-semibold text-[#111]">${processingFee.toFixed(2)}</span>
           </div>
         ) : (
@@ -915,7 +915,7 @@ function ProcessingPolicyModal({ onClose }) {
           </div>
           <div>
             <p className="font-semibold text-[#111]">Contact Us</p>
-            <p className="mt-2">If you have any questions about your order or our digital processing policy, please don&apos;t hesitate to contact our support team at <a href="mailto:drawing@easyguide.store" className="text-[#e8919c] underline">drawing@easyguide.store</a>.</p>
+            <p className="mt-2">If you have any questions about your order or our digital processing policy, please don&apos;t hesitate to contact our support team at <a href="mailto:photography@easyguide.store" className="text-[#e8919c] underline">photography@easyguide.store</a>.</p>
           </div>
         </div>
       </div>
@@ -932,7 +932,7 @@ export default function CheckoutPage() {
   const [policyModalOpen, setPolicyModalOpen] = useState(false);
 
   useEffect(() => {
-    const savedCart = localStorage.getItem("drawing-cart");
+    const savedCart = localStorage.getItem("photography-cart");
     if (savedCart) {
       try { setCart(JSON.parse(savedCart)); } catch { setCart([]); }
     }
@@ -965,13 +965,13 @@ export default function CheckoutPage() {
       <header className="border-b border-[#e6e6e6] bg-[#ffffff]">
         <div className="relative mx-auto flex h-[120px] md:h-[130px] max-w-[1350px] items-center justify-center px-[16px] md:px-[24px]">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <img src="/images/logo.png" alt="Drawing Easy Guide" className="h-[100px] md:h-[140px] w-auto object-contain" />
+            <img src="/images/logo.png" alt="Photography Easy Guide" className="h-[100px] md:h-[140px] w-auto object-contain" />
           </div>
           <div className="absolute right-[16px] md:right-[24px] flex items-center">
             <button type="button" aria-label="Cart" className="relative text-[#222] hover:opacity-70" onClick={() => window.location.href = "/"}>
               <ShoppingBag size={23} strokeWidth={1.7} />
               {cart.length > 0 && (
-                <span className="absolute -right-[10px] -top-[9px] flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-[#eda3ac] px-[5px] text-[10px] font-bold text-white">
+                <span className="absolute -right-[10px] -top-[9px] flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-[#111] px-[5px] text-[10px] font-bold text-white">
                   {cart.reduce((t, i) => t + i.quantity, 0)}
                 </span>
               )}

@@ -19,7 +19,7 @@ export default function SiteFooter() {
   ];
 
   return (
-    <footer className="bg-[#eda3ac] py-16">
+    <footer className="bg-[#111] py-16">
       <div className="mx-auto max-w-[1320px] px-[24px]">
         <div className="grid gap-10 md:grid-cols-[auto_1fr_1fr_1fr] md:gap-16">
 
@@ -59,7 +59,7 @@ export default function SiteFooter() {
                 className="w-full rounded-[6px] border border-white bg-transparent px-4 py-3 text-[14px] text-white placeholder-white/70 outline-none"
                 placeholder="Email"
               />
-              <button className="w-full rounded-[6px] bg-white py-3 text-[14px] font-bold text-[#eda3ac]">Sign up</button>
+              <button className="w-full rounded-[6px] bg-white py-3 text-[14px] font-bold text-[#111]">Sign up</button>
             </div>
           </div>
 

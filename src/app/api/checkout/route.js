@@ -36,7 +36,7 @@ export async function POST(req) {
       metadata: {
         // Store only IDs (comma-separated) to stay under Stripe's 500 char limit
         productIds: cartItems.map((i) => i.id).join(","),
-        site: "drawing",
+        site: "photography",
       },
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/`,

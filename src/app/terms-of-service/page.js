@@ -43,7 +43,7 @@ export default function TermsOfService() {
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">4. Refunds</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             Please refer to our{" "}
-            <a href="/refund-policy" className="text-[#eda3ac] underline">Refund Policy</a>{" "}
+            <a href="/refund-policy" className="text-[#111] underline">Refund Policy</a>{" "}
             for details on eligibility and how to request a refund.
           </p>
 
@@ -62,7 +62,7 @@ export default function TermsOfService() {
           <h2 className="mt-8 text-[20px] font-bold text-[#111]">7. Contact</h2>
           <p className="mt-3 text-[16px] leading-[1.8] text-[#444]">
             For questions about these terms, email us at{" "}
-            <a href="mailto:photography@easyguide.store" className="text-[#eda3ac] underline">photography@easyguide.store</a>.
+            <a href="mailto:photography@easyguide.store" className="text-[#111] underline">photography@easyguide.store</a>.
           </p>
         </div>
       </main>

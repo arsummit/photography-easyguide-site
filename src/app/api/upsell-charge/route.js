@@ -4,12 +4,8 @@ import { resend } from "@/lib/resend";
 
 const DOWNLOAD_LINKS = [
   {
-    name: "Full Drawing Guide (Upgraded to Colored)",
-    url: "https://drive.google.com/drive/u/0/folders/1JFhdBQICTAqXuFeleeIzO0tSM5S4gJYP",
-  },
-  {
-    name: "All Extras and Upgrades",
-    url: "https://drive.google.com/drive/u/0/folders/11jWbAB3muUxh0zNo0ucPet_xrt23F8TB",
+    name: "Photography Notes + All Extras",
+    url: "https://drive.google.com/drive/u/0/folders/1E6OB0aoj6xlSCDthFCdBf4okKRGAqU0h",
   },
 ];
 
@@ -59,7 +55,7 @@ export async function POST(req) {
         <tr>
           <td style="padding:12px 0;border-bottom:1px solid #f0e6da">
             <strong style="display:block;color:#111;font-size:15px">${item.name}</strong>
-            <a href="${item.url}" style="color:#eda3ac;font-size:14px;text-decoration:none">⬇ Open Folder</a>
+            <a href="${item.url}" style="color:#111;font-size:14px;text-decoration:none">⬇ Open Folder</a>
           </td>
         </tr>`
       ).join("");
@@ -67,10 +63,10 @@ export async function POST(req) {
       await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL,
         to: email,
-        subject: "Your Drawing Upgrade — Download Links Inside! ✏️",
+        subject: "Your Photography Upgrade — Download Links Inside! 📷",
         html: `
           <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#fff;color:#111">
-            <div style="background:#eda3ac;padding:32px;text-align:center">
+            <div style="background:#111;padding:32px;text-align:center">
               <h1 style="color:#fff;margin:0;font-size:24px">Upgrade Confirmed! 🎉</h1>
             </div>
             <div style="padding:32px">
@@ -82,7 +78,7 @@ export async function POST(req) {
               <table style="width:100%;border-collapse:collapse;margin-top:16px">${downloadListHtml}</table>
               <div style="margin-top:32px;padding:16px;background:#fff8f3;border-radius:8px;border:1px solid #f0e6da">
                 <p style="margin:0;font-size:13px;color:#888">
-                  Issues? Contact <a href="mailto:drawing@easyguide.store" style="color:#eda3ac">drawing@easyguide.store</a>
+                  Issues? Contact <a href="mailto:photography@easyguide.store" style="color:#111">photography@easyguide.store</a>
                 </p>
               </div>
             </div>

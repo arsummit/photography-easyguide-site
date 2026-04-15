@@ -8,74 +8,76 @@ import { trackEvent } from "@/lib/metaPixel";
 export default function Home() {
   const topReviews = [
     {
-      name: "Emma M.",
-      text: "Absolutely love this Photography Guide Notes bundle! It covers everything from camera basics to more advanced shooting tips.",
+      name: "Emily R.",
+      text: "These notes gave me the structure I needed to actually improve my shots. I've gone from auto mode to fully manual with confidence.",
       image: "/images/R1.jpg",
     },
     {
-      name: "Alex G.",
-      text: "A must-have for any photographer looking to stay organized, inspired, and keep improving!",
+      name: "Robert N.",
+      text: "I keep this printed in my camera bag. Every time I go out, I pick a technique to focus on, and I can see real progress in my photos.",
       image: "/images/R2.jpg",
     },
     {
-      name: "Anna B.",
-      text: "So glad I found this! Each photography guide is perfectly structured, with tips for every type of shot.",
+      name: "Larissa B.",
+      text: "The section on golden hour photography completely changed my results. I used to struggle with light, now I know exactly when and how to shoot.",
       image: "/images/R3.jpg",
     },
   ];
 
   const addons = [
+    ["Black and White Photography Tips", "$0.99", "$14.99"],
+    ["Candid Moments Photography Techniques", "$0.99", "$14.99"],
+    ["Food Photography Masterclass", "$0.99", "$14.99"],
+    ["Golden Hour Photography Guide", "$0.99", "$14.99"],
+    ["Landscape Photography Insights", "$0.99", "$14.99"],
+    ["Macro Photography Techniques", "$0.99", "$14.99"],
+    ["Minimalist Photography Techniques", "$0.99", "$14.99"],
+    ["Motion Blur Photography Challenge", "$0.99", "$14.99"],
+    ["Night Photography Techniques", "$0.99", "$14.99"],
     ["Portrait Photography Guide", "$0.99", "$14.99"],
-    ["Beginner's Camera Settings Guide", "$0.99", "$14.99"],
-    ["Landscape & Nature Photography", "$0.99", "$14.99"],
-    ["Lighting & Exposure Techniques", "$0.99", "$14.99"],
-    ["Composition & Framing Mastery", "$0.99", "$14.99"],
-    ["Street Photography Workbook", "$0.99", "$14.99"],
-    ["Black & White Photography Guide", "$0.99", "$14.99"],
-    ["Product & Flat Lay Photography", "$0.99", "$14.99"],
-    ["Photo Editing Basics (Lightroom & More)", "$0.99", "$14.99"],
-    ["Wildlife & Action Photography", "$0.99", "$14.99"],
-    ["Night & Low-Light Photography", "$0.99", "$14.99"],
-    ["Food Photography Guide", "$0.99", "$14.99"],
-    ["Wedding & Event Photography", "$0.99", "$14.99"],
-    ["Macro & Close-Up Photography", "$0.99", "$14.99"],
-    ["Studio Photography Fundamentals", "$0.99", "$14.99"],
+    ["Reflections and Mirror Photography", "$0.99", "$14.99"],
+    ["Self-Portrait Mastery Notes", "$0.99", "$14.99"],
+    ["Shadow Play Photography Guide", "$0.99", "$14.99"],
+    ["Splash of Color Photography Tips", "$0.99", "$14.99"],
+    ["Street Photography Guide", "$0.99", "$14.99"],
   ];
 
   const benefits = [
-    "Over 1000 printable pages covering camera techniques, lighting, composition & more",
-    "Designed to improve your photography skills and spark creativity at any level",
-    "Includes fundamentals like exposure, composition, lighting, focus, and editing",
-    "Step-by-step, beginner-friendly instructions that are easy to follow",
-    "Perfect for daily practice, photo walks, and personal photography projects",
-    "Great for beginners and experienced photographers alike",
+    "Over 100 printable pages covering composition, lighting, manual settings & more",
+    "Built to sharpen your skills and boost creative confidence – at any level",
+    "Includes ISO, aperture, shutter speed, white balance, framing techniques and more",
+    "Clear, beginner-friendly guidance – no photography degree needed",
+    "Designed for practice sessions, personal projects, and visual journaling",
+    "Pairs well with editing, portfolio building or creative challenges",
+    "Inclusive, approachable language – shoot your way, at your pace",
+    "Compatible with GoodNotes, iPad, Notability or as a printed field guide",
   ];
 
   const testimonialCards = [
     {
-      title: "Love these as a beginner!",
-      body: "I just started learning photography, and these notes helped me grasp the basics. Now, I can even shoot simple compositions with confidence!",
+      title: "So helpful for my progress!",
+      body: "I've never felt this consistent with practicing techniques or actually reviewing my shots. These notes made photography feel both structured and creative.",
       name: "Janine H.",
       image: "/images/T1.jpg",
     },
     {
-      title: "Easy to learn!",
-      body: "Photography felt intimidating at first, but not anymore. These guides break everything down so clearly that I'm enjoying shooting every day!",
-      name: "Chris T.",
+      title: "Great for staying on track!",
+      body: "I used to get stuck trying to learn everything at once. Now I actually improve each week and know what to work on next.",
+      name: "Frederike M.",
       image: "/images/T2.jpg",
     },
     {
       title: "Perfect gift!",
-      body: "I gifted these notes to my friend, and she absolutely loves them! The perfect gift for anyone who loves photography!",
-      name: "Lisa B.",
+      body: "Got this for my brother and he's using it every weekend. It's practical, motivating, and helped him enjoy photography again.",
+      name: "Michael H.",
       image: "/images/T3.jpg",
     },
   ];
 
   const stats = [
-    ["98%", "Felt more structured and focused in their photography journey."],
-    ["94%", "Said that learning photography felt easier"],
-    ["97%", "rated our bundle 4.9/5"],
+    ["98%", "Felt more organized and consistent with their photography goals after using these notes."],
+    ["94%", "Said that learning photography felt easier."],
+    ["97%", "Rated our bundle 4.9/5."],
   ];
 
   const quickLinks = [
@@ -94,21 +96,21 @@ export default function Home() {
   };
 
   const iconMap = {
-    "Portrait Photography Guide": "/images/icons/1.png",
-    "Beginner's Camera Settings Guide": "/images/icons/2.png",
-    "Landscape & Nature Photography": "/images/icons/3.png",
-    "Lighting & Exposure Techniques": "/images/icons/4.png",
-    "Composition & Framing Mastery": "/images/icons/5.png",
-    "Street Photography Workbook": "/images/icons/6.png",
-    "Black & White Photography Guide": "/images/icons/7.png",
-    "Product & Flat Lay Photography": "/images/icons/8.png",
-    "Photo Editing Basics (Lightroom & More)": "/images/icons/9.png",
-    "Wildlife & Action Photography": "/images/icons/10.png",
-    "Night & Low-Light Photography": "/images/icons/11.png",
-    "Food Photography Guide": "/images/icons/12.png",
-    "Wedding & Event Photography": "/images/icons/13.png",
-    "Macro & Close-Up Photography": "/images/icons/14.png",
-    "Studio Photography Fundamentals": "/images/icons/15.png",
+    "Black and White Photography Tips": "/images/icons/1.png",
+    "Candid Moments Photography Techniques": "/images/icons/2.png",
+    "Food Photography Masterclass": "/images/icons/3.png",
+    "Golden Hour Photography Guide": "/images/icons/4.png",
+    "Landscape Photography Insights": "/images/icons/5.png",
+    "Macro Photography Techniques": "/images/icons/6.png",
+    "Minimalist Photography Techniques": "/images/icons/7.png",
+    "Motion Blur Photography Challenge": "/images/icons/8.png",
+    "Night Photography Techniques": "/images/icons/9.png",
+    "Portrait Photography Guide": "/images/icons/10.png",
+    "Reflections and Mirror Photography": "/images/icons/11.png",
+    "Self-Portrait Mastery Notes": "/images/icons/12.png",
+    "Shadow Play Photography Guide": "/images/icons/13.png",
+    "Splash of Color Photography Tips": "/images/icons/14.png",
+    "Street Photography Guide": "/images/icons/15.png",
   };
 
   const addonProducts = addons.map(([title, sale, compare], index) => ({
@@ -382,7 +384,7 @@ export default function Home() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search products…"
-                className="w-full rounded-[8px] border border-[#d9d9d9] py-2 pl-9 pr-10 text-[15px] outline-none focus:border-[#eda3ac]"
+                className="w-full rounded-[8px] border border-[#d9d9d9] py-2 pl-9 pr-10 text-[15px] outline-none focus:border-[#111]"
               />
               <button
                 type="button"
@@ -416,7 +418,7 @@ export default function Home() {
                         <img src={p.image} alt={p.name} className="h-[40px] w-[40px] rounded-[6px] object-contain border border-[#eee]" />
                         <div>
                           <p className="text-[14px] font-medium text-[#111]">{p.name}</p>
-                          <p className="text-[13px] text-[#eda3ac] font-semibold">${p.price.toFixed(2)}</p>
+                          <p className="text-[13px] text-[#111] font-semibold">${p.price.toFixed(2)}</p>
                         </div>
                       </button>
                     ))}
@@ -439,7 +441,7 @@ export default function Home() {
                   </button>
                 </div>
                 <nav className="flex flex-col px-5 py-4 gap-1">
-                  <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="rounded-[8px] bg-[#eda3ac] px-4 py-3 text-[15px] font-semibold text-white text-center">
+                  <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="rounded-[8px] bg-[#111] px-4 py-3 text-[15px] font-semibold text-white text-center">
                     Shop Now
                   </a>
                   <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 text-[15px] font-medium text-[#2b2b2b] hover:text-black">
@@ -453,7 +455,7 @@ export default function Home() {
           <div className="relative mx-auto flex h-[120px] md:h-[130px] max-w-[1350px] items-center justify-between px-[16px] md:px-[24px]">
             {/* Desktop left nav */}
             <div className="hidden md:flex items-center gap-[24px] text-[14px] font-medium text-[#2b2b2b]">
-              <a href="#shop" className="rounded-[6px] bg-[#eda3ac] px-[16px] py-[7px] text-[15px] font-semibold text-white transition-all duration-200 hover:bg-[#e07a87]">
+              <a href="#shop" className="rounded-[6px] bg-[#111] px-[16px] py-[7px] text-[15px] font-semibold text-white transition-all duration-200 hover:bg-[#333]">
                 Shop Now
               </a>
               <a href="/contact" className="hover:text-black">Contact</a>
@@ -497,7 +499,7 @@ export default function Home() {
               >
                 <ShoppingBag size={23} strokeWidth={1.7} />
                 {cartCount > 0 && (
-                  <span className="absolute -right-[10px] -top-[9px] flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-[#eda3ac] px-[5px] text-[10px] font-bold text-white">
+                  <span className="absolute -right-[10px] -top-[9px] flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-[#111] px-[5px] text-[10px] font-bold text-white">
                     {cartCount}
                   </span>
                 )}
@@ -538,30 +540,30 @@ export default function Home() {
               </div>
 
               <div className="mt-[8px] flex items-center gap-[8px]">
-                <span className="text-[24px] font-extrabold text-[#eda3ac]">
+                <span className="text-[24px] font-extrabold text-[#111]">
                   $0.00
                 </span>
                 <span className="text-[16px] font-extrabold text-[#8a8a8a] line-through">
                   $99.99
                 </span>
-                <span className="rounded bg-[#eda3ac] px-[8px] py-[3px] text-[11px] font-semibold text-white">
+                <span className="rounded bg-[#111] px-[8px] py-[3px] text-[11px] font-semibold text-white">
                   SAVE 100%
                 </span>
               </div>
 
               <ul className="mt-[10px] space-y-[5px] text-[16px] text-[#444]">
-                <li>🚀 Get Instant Access – Start Shooting Right Away!</li>
-                <li>✨ Perfect for Photographers of All Skill Levels</li>
-                <li>📷 Stay Inspired and Improve Your Techniques!</li>
+                <li>🔮 1000+ Beautifully Designed Pages</li>
+                <li>📥 Start right away – No Shipping Needed</li>
+                <li>💫 For All Levels – From Beginner To Advanced</li>
                 <li className="font-semibold text-black">
-                  🎉 Free Today – Anniversary Sale!
+                  ✨ Free Today – Anniversary Sale!
                 </li>
               </ul>
 
               <button
                 ref={addToCartRef}
                 onClick={handleMainAddToCart}
-                className="mt-[12px] w-full rounded-[6px] bg-[#eda3ac] py-[14px] text-[15px] font-bold text-white transition hover:bg-[#e07a87]"
+                className="mt-[12px] w-full rounded-[6px] bg-[#111] py-[14px] text-[15px] font-bold text-white transition hover:bg-[#333]"
               >
                 ADD TO CART
               </button>
@@ -628,7 +630,7 @@ export default function Home() {
 
                           <div className="flex shrink-0 items-center gap-3">
                             <div className="text-right leading-none">
-                              <div className="text-[16px] font-bold text-[#eda3ac]">
+                              <div className="text-[16px] font-bold text-[#111]">
                                 {sale}
                               </div>
                               <div className="mt-[3px] text-[13px] text-[#111] line-through">
@@ -640,7 +642,7 @@ export default function Home() {
                               type="button"
                               onClick={() => toggleAddon(product.id)}
                               className={`flex h-[26px] w-[46px] shrink-0 items-center rounded-full px-[3px] transition-colors duration-200 ${
-                                isSelected ? "bg-[#eda3ac]" : "bg-[#d5d5d5]"
+                                isSelected ? "bg-[#111]" : "bg-[#d5d5d5]"
                               }`}
                               aria-label={`Toggle ${title}`}
                             >
@@ -717,8 +719,8 @@ export default function Home() {
               <p className="mx-auto mt-6 text-[14px] md:text-[15px] leading-[1.6] text-[#555] md:whitespace-nowrap">
                 During our{" "}
                 <span className="font-extrabold text-[#222]">Anniversary Sale</span>, we're giving away{" "}
-                <span className="font-extrabold text-[#222]">1000 Photography Guide Notes for FREE!</span> We just ask that you
-                cover the processing fee. Help us spread the word and inspire more photographers!
+                <span className="font-extrabold text-[#222]">100 Notes for FREE!</span> We just ask that you
+                cover the processing fee. Help us spread the word!
               </p>
             </div>
 
@@ -735,7 +737,7 @@ export default function Home() {
 
               <div>
                 <h3 className="max-w-[760px] text-[28px] md:text-[36px] font-extrabold leading-[1.2] tracking-[0.06rem] text-[#121212]">
-                  Photography Easy Guide – Master the Basics, Shoot with Confidence
+                  Photography Notes – Master Your Camera, Frame with Intention
                 </h3>
 
                 <ul className="mt-4 md:mt-8 space-y-3 md:space-y-5 text-[14px] md:text-[15px] leading-[1.6] text-[#555]">
@@ -753,11 +755,11 @@ export default function Home() {
             <div className="grid items-center gap-[20px] md:gap-[60px] lg:grid-cols-[0.95fr_1.05fr]">
               <div className="order-2 lg:order-1">
                 <h2 className="max-w-[760px] text-[28px] md:text-[36px] font-extrabold leading-[1.2] tracking-[0.06rem] text-[#121212]">
-                  Stay on Track with Your Photography Journey!
+                  Stay Focused on Your Creative Growth
                 </h2>
 
                 <p className="mt-4 md:mt-8 max-w-[680px] text-[14px] md:text-[15px] leading-[1.6] text-[#555]">
-                  Say goodbye to scattered ideas and forgotten techniques! These Photography Guide Notes help you stay organized with every lesson, allowing you to focus on improving your skills with more confidence and faster progress.
+                  No more scattered tips or confusing tutorials. These photography notes help you practice with intention, so you can grow with clarity, stay inspired, and truly master your camera — one shot at a time.
                 </p>
               </div>
 
@@ -789,11 +791,11 @@ export default function Home() {
 
               <div>
                 <h2 className="max-w-[760px] text-[28px] md:text-[36px] font-extrabold leading-[1.2] tracking-[0.06rem] text-[#121212]">
-                  Lessons for Photographers at Any Stage!
+                  Skyrocket Your Visual Awareness
                 </h2>
 
                 <p className="mt-4 md:mt-8 max-w-[700px] text-[14px] md:text-[15px] leading-[1.6] text-[#555]">
-                  From basic camera techniques to more advanced photography skills, this bundle has a guide for every stage of your photographic journey. It's all in one place, beautifully organized, and ready whenever creativity strikes!
+                  Photography Notes give you a clear, empowering path to improve — no more random YouTube dives or guesswork. Unlock creative confidence, technical skills, and a deeper connection with your unique style on every page.
                 </p>
               </div>
             </div>
@@ -803,8 +805,8 @@ export default function Home() {
         <section className="bg-white pt-4 pb-8 md:pt-8 md:pb-16">
           <div className="mx-auto max-w-[1320px] px-[24px]">
             <div className="text-center">
-              <h2 className="text-[30px] md:text-[36px] font-extrabold leading-[1.2] tracking-[0.06rem] text-[#eda3ac]">
-                Join Thousands of Passionate Photographers!
+              <h2 className="text-[30px] md:text-[36px] font-extrabold leading-[1.2] tracking-[0.06rem] text-[#111]">
+                Join Thousands of Photography Lovers!
               </h2>
 
               <div className="mt-6 flex items-center justify-center gap-3 text-[#444]">
@@ -885,8 +887,8 @@ export default function Home() {
             <div className="grid items-center gap-[40px] lg:gap-[220px] lg:grid-cols-[0.9fr_1.1fr]">
               <div className="flex items-center justify-center lg:justify-start lg:pl-[20px]">
                 <h2 className="max-w-[750px] text-center lg:text-center text-[30px] md:text-[36px] font-extrabold leading-[1.12] tracking-[0.06rem] text-[#111]">
-                  Loved by 3.000+<br className="hidden md:block" />
-                  Customers Worldwide
+                  Loved by 3,000+<br className="hidden md:block" />
+                  Photography Fans
                 </h2>
               </div>
 
@@ -910,7 +912,7 @@ export default function Home() {
                             <circle cx="37" cy="37" r={r} fill="none" stroke="#f0e0d0" strokeWidth="8" />
                             <circle
                               cx="37" cy="37" r={r} fill="none"
-                              stroke="#eda3ac" strokeWidth="8"
+                              stroke="#111" strokeWidth="8"
                               strokeDasharray={`${dash} ${circ}`}
                               strokeLinecap="round"
                               transform="rotate(-90 37 37)"
@@ -918,7 +920,7 @@ export default function Home() {
                           </svg>
                         );
                       })()}
-                      <span className="absolute inset-0 flex items-center justify-center text-[18px] font-extrabold text-[#eda3ac]">
+                      <span className="absolute inset-0 flex items-center justify-center text-[18px] font-extrabold text-[#111]">
                         {value}
                       </span>
                     </div>
@@ -978,7 +980,7 @@ export default function Home() {
                           index !== 0 ? "border-t border-gray-300/50" : ""
                         }`}
                       >
-                        <div className="flex min-h-[60px] items-center justify-center bg-[#eda3ac] px-[12px] text-center text-[14px] md:text-[20px] font-semibold leading-[1.3] text-white">
+                        <div className="flex min-h-[60px] items-center justify-center bg-[#111] px-[12px] text-center text-[14px] md:text-[20px] font-semibold leading-[1.3] text-white">
                           {row}
                         </div>
 
@@ -1080,6 +1082,7 @@ export default function Home() {
                       src={review.image}
                       alt={review.name}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
                     />
                   </div>
@@ -1107,7 +1110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer id="contact" className="bg-[#eda3ac] py-16">
+        <footer id="contact" className="bg-[#111] py-16">
           <div className="mx-auto max-w-[1320px] px-[24px]">
             <div className="grid gap-14 md:grid-cols-[auto_1fr_1fr_1fr] md:gap-24">
 
@@ -1157,7 +1160,7 @@ export default function Home() {
                     className="w-full rounded-[6px] border border-white bg-transparent px-4 py-3 text-[16px] text-white placeholder-white/70 outline-none"
                     placeholder="Email"
                   />
-                  <button className="w-full rounded-[6px] bg-white py-3 text-[16px] font-bold text-[#eda3ac]">
+                  <button className="w-full rounded-[6px] bg-white py-3 text-[16px] font-bold text-[#111]">
                     Sign up
                   </button>
                 </div>
@@ -1289,7 +1292,7 @@ export default function Home() {
                                 ${(item.compareAtPrice * item.quantity).toFixed(2)}
                               </span>
                             )}
-                            <span className="text-[15px] font-extrabold text-[#eda3ac]">
+                            <span className="text-[15px] font-extrabold text-[#111]">
                               ${(item.price * item.quantity).toFixed(2)}
                             </span>
                           </div>
@@ -1309,7 +1312,7 @@ export default function Home() {
         </div>
 
         <div className="border-t border-[#f3f3f3] px-5 py-5">
-          <div className="flex items-center justify-between text-[16px] font-bold text-[#eda3ac]">
+          <div className="flex items-center justify-between text-[16px] font-bold text-[#111]">
             <span>Savings</span>
             <span>-${totalSavings.toFixed(2)}</span>
           </div>
@@ -1322,7 +1325,7 @@ export default function Home() {
           <button
             onClick={handleCheckout}
             disabled={cart.length === 0}
-            className="mt-5 w-full rounded-[10px] bg-[#eda3ac] py-4 text-[16px] font-extrabold text-white transition hover:bg-[#e07a87] disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-5 w-full rounded-[10px] bg-[#111] py-4 text-[16px] font-extrabold text-white transition hover:bg-[#333] disabled:cursor-not-allowed disabled:opacity-50"
           >
             Check out
           </button>
@@ -1372,7 +1375,7 @@ export default function Home() {
                 1.000+ Free Photography Easy Guide
               </p>
               <div className="mt-[3px] flex items-center gap-[6px]">
-                <span className="text-[16px] font-extrabold text-[#eda3ac]">$0.00</span>
+                <span className="text-[16px] font-extrabold text-[#111]">$0.00</span>
                 <span className="text-[13px] font-extrabold text-[#000000] line-through">$99.99</span>
               </div>
             </div>
@@ -1380,7 +1383,7 @@ export default function Home() {
             {/* BUTTON */}
             <button
               onClick={handleMainAddToCart}
-              className="shrink-0 rounded-[8px] bg-[#eda3ac] px-6 py-[13px] text-[15px] font-extrabold text-white shadow-md transition hover:bg-[#e07a87]"
+              className="shrink-0 rounded-[8px] bg-[#111] px-6 py-[13px] text-[15px] font-extrabold text-white shadow-md transition hover:bg-[#333]"
             >
               Add to cart
             </button>
@@ -1407,7 +1410,7 @@ export default function Home() {
                     required
                     value={reviewForm.name}
                     onChange={(e) => setReviewForm((p) => ({ ...p, name: e.target.value }))}
-                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#eda3ac]"
+                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#111]"
                   />
                 </div>
                 <div>
@@ -1416,7 +1419,7 @@ export default function Home() {
                     required
                     value={reviewForm.rating}
                     onChange={(e) => setReviewForm((p) => ({ ...p, rating: e.target.value }))}
-                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#eda3ac]"
+                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#111]"
                   >
                     <option value="">Select</option>
                     <option value="5">★★★★★ — 5 Stars</option>
@@ -1433,7 +1436,7 @@ export default function Home() {
                     rows={4}
                     value={reviewForm.text}
                     onChange={(e) => setReviewForm((p) => ({ ...p, text: e.target.value }))}
-                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#eda3ac] resize-none"
+                    className="w-full rounded-[8px] border border-[#ddd] px-4 py-3 text-[14px] outline-none focus:border-[#111] resize-none"
                   />
                 </div>
                 <button type="submit" className="w-full rounded-[8px] bg-[#111] py-3 text-[15px] font-bold text-white hover:bg-[#333] transition">
