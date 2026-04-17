@@ -32,6 +32,7 @@ export async function POST(req) {
   // Handle payment_intent.succeeded (custom checkout page flow)
   if (event.type === "payment_intent.succeeded") {
     const pi = event.data.object;
+    if (pi.metadata?.site !== "photography") return NextResponse.json({ received: true });
 
     // Email comes from receipt_email (set via confirmParams in the frontend)
     const email = pi.receipt_email || pi.metadata?.customer_email || null;
@@ -46,6 +47,7 @@ export async function POST(req) {
   // Handle checkout.session.completed (Stripe hosted checkout fallback)
   if (event.type === "checkout.session.completed") {
     const session = event.data.object;
+    if (session.metadata?.site !== "photography") return NextResponse.json({ received: true });
 
     const email =
       session.customer_details?.email ||
